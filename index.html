@@ -22,22 +22,41 @@
   </head>
   <body>
     <main class="outer-wrapper">
-      <div class="logo-wrapper">
-        <img src="./images/logo.svg" alt="Base Apparel logo icon" />
+      <div class="content-wrapper">
+        <div class="logo-wrapper">
+          <img src="./images/logo.svg" alt="Base Apparel logo icon" />
+        </div>
+        <picture class="banner-photo">
+          <source
+            media="(min-width:376px)"
+            srcset="./images/hero-desktop.jpg"
+            style="width: auto"
+          />
+          <source
+            media="(max-width:375px)"
+            srcset="./images/hero-mobile.jpg"
+            style="max-width: 375px"
+          />
+          <img
+            src="./images/hero-desktop.jpg"
+            alt="Female modelling wrist jewellery"
+          />
+        </picture>
+        <h1 class="title text-center text-2xl text-dkGrayRed">
+          We're coming soon 
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form action="" method="POST" name="email_form">
+          <input type="email" name="contact_email" id="contact_email" placeholder="Email Address" >
+        </form>
+        <!-- <div class="arrow-icon-wrapper">
+          <img src="./images/icon-arrow.svg" alt="email arrow icon" >
+        </div>      -->
       </div>
-      <picture>
-        <source media="(min-width:376px)" srcset="./images/hero-desktop.jpg" style="width: auto"/>
-        <source media="(max-width:375px)" srcset="./images/hero-mobile.jpg" style="max-width: 375px"/>
-        <img
-          src="./images/hero-desktop.jpg"
-          alt="Female modelling wrist jewellery"
-        />
-      </picture>
-      <h1 class="text-center text-2xl text-dkGrayRed">
-        We're coming soon Hello fellow shoppers! We're currently building our
-        new fashion store. Add your email below to stay up-to-date with
-        announcements and our launch deals. Email Address
-      </h1>
     </main>
   </body>
 </html>
