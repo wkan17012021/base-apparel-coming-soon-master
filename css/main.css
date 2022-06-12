@@ -678,6 +678,10 @@ video {
   --tw-gradient-to: hsl(0, 74%, 74%);
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -708,6 +712,46 @@ video {
 
 .pr-3 {
   padding-right: 0.75rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-24 {
+  padding-left: 6rem;
+}
+
+.pl-20 {
+  padding-left: 5rem;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pl-16 {
+  padding-left: 4rem;
+}
+
+.pl-12 {
+  padding-left: 3rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .text-center {
@@ -743,6 +787,11 @@ video {
 .text-desatRed {
   --tw-text-opacity: 1;
   color: hsl(0 36% 70% / var(--tw-text-opacity));
+}
+
+.text-softRed {
+  --tw-text-opacity: 1;
+  color: hsl(0 93% 68% / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
@@ -861,6 +910,22 @@ video {
     flex-direction: row;
   }
 
+  .mobile\:bg-contain {
+    background-size: contain;
+  }
+
+  .mobile\:bg-cover {
+    background-size: cover;
+  }
+
+  .mobile\:bg-center {
+    background-position: center;
+  }
+
+  .mobile\:bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+
   .mobile\:p-5 {
     padding: 1.25rem;
   }
@@ -886,6 +951,10 @@ video {
 
   .mobile\:pl-5 {
     padding-left: 1.25rem;
+  }
+
+  .mobile\:pl-12 {
+    padding-left: 3rem;
   }
 
   .mobile\:text-left {

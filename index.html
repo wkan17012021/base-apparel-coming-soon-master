@@ -19,7 +19,6 @@
     />
     <title>Frontend Mentor | Base Apparel coming soon page</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="./form.css">
     <style>
       * {
         border: 1px solid red;
@@ -37,7 +36,10 @@
       >
         <img src="./images/logo.svg" alt="Base Apparel logo icon" />
       </div>
-      <div class="main-content-wrapper order-last mobile:w-3/5 mobile:pt-36">
+      <div
+        style="background-image: url(./images/bg-pattern-desktop.svg)"
+        class="main-content-wrapper order-last mobile:w-3/5 mobile:pt-36 mobile:bg-no-repeat mobile:bg-center mobile:bg-cover"
+      >
         <h1
           class="title text-center pt-6 px-10 uppercase tracking-custom font-semibold text-4xl text-dkGrayRed mobile:text-left mobile:m-auto mobile:text-2xl"
         >
@@ -53,7 +55,7 @@
           launch deals.
         </p>
         <form
-          class="mb-10 mx-4 relative mobile:m-auto mobile:max-w-[90%]"
+          class="mx-4 relative mobile:m-auto mobile:max-w-[90%]"
           action=""
           method="POST"
           name="email_form"
@@ -101,6 +103,7 @@
             </svg>
           </button>
         </form>
+        <p id="error-msg" class="mb-10 text-softRed pl-8 mobile:pl-12"></p>
       </div>
       <picture class="banner-photo mobile:w-2/5 mobile:order-last">
         <source media="(min-width:376px)" srcset="./images/hero-desktop.jpg" />

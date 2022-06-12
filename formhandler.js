@@ -1,10 +1,6 @@
 const userInput = document.getElementById("contact_email");
 const emailSubmitBtn = document.getElementById("submit-button");
-let emailform = document.getElementById("email_form");
-const errorMsg = document.createTextNode("please provide a valid email");
-const errorPara = document.createElement("p");
-errorPara.appendChild(errorMsg);
-const errorElem = emailform[1];
+const errorMsgTag = document.getElementById("error-msg");
 let userVal = "";
 
 emailSubmitBtn.addEventListener("click", () => {
@@ -14,7 +10,7 @@ emailSubmitBtn.addEventListener("click", () => {
 
 function testVal() {
   if (userVal === "") {
-    errorElem.appendChild(errorPara);
+    errorMsgTag.textContent = "please provide a valid email";
   } else {
     console.log(userVal);
   }
