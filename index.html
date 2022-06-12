@@ -28,11 +28,72 @@
   </head>
 
   <body>
-    <main class="outer-wrapper pt-7">
-      <div class="logo-wrapper pl-5 mb-6">
+    <main
+      class="outer-wrapper w-full flex flex-col mobile:flex mobile:flex-row relative"
+    >
+      <div class="logo-wrapper pl-7 mt-10 mb-6 mobile:absolute">
         <img src="./images/logo.svg" alt="Base Apparel logo icon" />
       </div>
-      <picture class="banner-photo">
+      <div class="main-content-wrapper order-last mobile:w-3/5 mobile:pt-36">
+        <h1
+          class="title text-center pt-6 px-10 uppercase tracking-custom font-semibold text-4xl text-dkGrayRed mobile:text-left mobile:pl-20"
+        >
+          <span class="text-desatRed font-light block">We're</span
+          ><span class="block">coming</span>
+          <span class="block">soon</span>
+        </h1>
+        <p class="text-desatRed py-8 px-4 text-center mobile:px-20 mobile:text-left">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form
+          class="mb-10 mx-4 relative"
+          action=""
+          method="POST"
+          name="email_form"
+        >
+          <input
+            class="h-12 m-auto block w-full border-2 border-desatRed rounded-full placeholder:pl-4 placeholder:text-desatRed placeholder:opacity-40"
+            type="email"
+            name="contact_email"
+            id="contact_email"
+            placeholder="  Email Address"
+          />
+          <div
+            class="error-icon-wrapper inline-block py-3 pr-3 h-full absolute top-0 right-24 invisible"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <g fill="none" fill-rule="evenodd">
+                <circle cx="12" cy="12" r="12" fill="#F96464" />
+                <path
+                  fill="#FFF"
+                  fill-rule="nonzero"
+                  d="M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="arrow-icon-wrapper rounded-full w-24 py-3 inline-block h-full absolute top-0 right-0 shadow-2xl bg-gradient-to-r from-offHoverLeft to-offHoverRight hover:from-onHoverLeft hover:to-onHoverRight"
+          >
+            <svg
+              class="m-auto"
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="20"
+            >
+              <path
+                fill="none"
+                stroke="#FFF"
+                stroke-width="2"
+                d="M1 1l8.836 8.836L1 18.671"
+              />
+            </svg>
+          </div>
+        </form>
+      </div>
+      <picture class="banner-photo mobile:w-2/5 mobile:order-last">
         <source media="(min-width:376px)" srcset="./images/hero-desktop.jpg" />
         <source media="(max-width:375px)" srcset="./images/hero-mobile.jpg" />
         <img
@@ -40,56 +101,6 @@
           alt="Female modelling wrist jewellery"
         />
       </picture>
-      <h1
-        class="title text-center px-10 uppercase tracking-widest font-semibold text-4xl text-dkGrayRed pt-6"
-      >
-        <span class="text-desatRed font-light block">We're</span
-        ><span class="block">coming</span>
-        <span class="block">soon</span>
-      </h1>
-      <p class="text-desatRed py-8 px-4 text-center">
-        Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our
-        launch deals.
-      </p>
-      <form
-        class="mb-10 mx-4 relative"
-        action=""
-        method="POST"
-        name="email_form"
-      >
-        <input
-          class="h-12 m-auto block w-full border-2 border-desatRed rounded-full placeholder:pl-4 placeholder:text-desatRed placeholder:opacity-20"
-          type="email"
-          name="contact_email"
-          id="contact_email"
-          placeholder="Email Address"
-        />
-        <div
-          class="arrow-wrapper rounded-full w-24 py-3 inline-block h-full absolute top-0 right-0 shadow-2xl"
-          style="
-            background: linear-gradient(
-              135deg,
-              hsl(0, 80%, 86%),
-              hsl(0, 74%, 74%)
-            );
-          "
-        >
-          <svg
-            class="m-auto"
-            xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="20"
-          >
-            <path
-              fill="none"
-              stroke="#FFF"
-              stroke-width="2"
-              d="M1 1l8.836 8.836L1 18.671"
-            />
-          </svg>
-        </div>
-      </form>
     </main>
   </body>
 </html>
