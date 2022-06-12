@@ -55,7 +55,7 @@ Highlighted above:
 
 ### Useful resources
 
-- [Brad Traversy's video](https://www.youtube.com/watch?v=dFgzHOX84xQ&t=101s&ab_channel=TraversyMedia) - This showed me how to sse Tailwind CLI method to import tailwind classes and local env setup.
+- [Brad Traversy's video](https://www.youtube.com/watch?v=dFgzHOX84xQ&t=101s&ab_channel=TraversyMedia) - This showed me how to use Tailwind CLI method to import tailwind classes and local env setup.
 
 1. Navigate to proj root and in terminal: `npm init -y` to create template json file.
 2. `npm install -D tailwindcss` (-D for dependency)
@@ -77,3 +77,4 @@ wkan17012021
 ## Acknowledgments
 
 Thanks goes out to Brad Traversy for his video on TW css.
+Also, requested suggestions from FEM Slack Channel, Grace replied with some helpful comments- namely 375px listed in the style guide means make the mobile-firest-responsive design styling from this breakpoint to the next (1440px).
