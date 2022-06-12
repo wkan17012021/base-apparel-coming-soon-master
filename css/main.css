@@ -582,6 +582,10 @@ video {
   right: 0px;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
 .order-last {
   order: 9999;
 }
@@ -637,6 +641,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.whitespace-normal {
+  white-space: normal;
 }
 
 .rounded-full {
@@ -782,6 +790,10 @@ video {
   opacity: 0.4;
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
 .hover\:from-onHoverLeft:hover {
   --tw-gradient-from: hsl(0, 60%, 90%);
   --tw-gradient-to: hsl(0 60% 90% / 0);
@@ -797,8 +809,24 @@ video {
     position: absolute;
   }
 
+  .mobile\:right-10 {
+    right: 2.5rem;
+  }
+
+  .mobile\:right-36 {
+    right: 9rem;
+  }
+
   .mobile\:order-last {
     order: 9999;
+  }
+
+  .mobile\:m-auto {
+    margin: auto;
+  }
+
+  .mobile\:ml-10 {
+    margin-left: 2.5rem;
   }
 
   .mobile\:flex {
@@ -813,24 +841,68 @@ video {
     width: 40%;
   }
 
+  .mobile\:max-w-\[\] {
+    max-width: ;
+  }
+
+  .mobile\:max-w-\[80\] {
+    max-width: 80;
+  }
+
+  .mobile\:max-w-\[80\%\] {
+    max-width: 80%;
+  }
+
+  .mobile\:max-w-\[90\%\] {
+    max-width: 90%;
+  }
+
   .mobile\:flex-row {
     flex-direction: row;
   }
 
-  .mobile\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .mobile\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .mobile\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .mobile\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .mobile\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .mobile\:pt-36 {
     padding-top: 9rem;
   }
 
-  .mobile\:pl-20 {
-    padding-left: 5rem;
+  .mobile\:pl-5 {
+    padding-left: 1.25rem;
   }
 
   .mobile\:text-left {
     text-align: left;
+  }
+
+  .mobile\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .mobile\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .first-letter\:mobile\:pl-5::first-letter {
+    padding-left: 1.25rem;
   }
 }

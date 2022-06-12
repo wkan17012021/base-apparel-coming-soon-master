@@ -19,6 +19,7 @@
     />
     <title>Frontend Mentor | Base Apparel coming soon page</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./form.css">
     <style>
       * {
         border: 1px solid red;
@@ -31,27 +32,32 @@
     <main
       class="outer-wrapper w-full flex flex-col mobile:flex mobile:flex-row relative"
     >
-      <div class="logo-wrapper pl-7 mt-10 mb-6 mobile:absolute">
+      <div
+        class="logo-wrapper pl-7 mt-10 mb-6 mobile:absolute mobile:px-0 mobile:ml-10"
+      >
         <img src="./images/logo.svg" alt="Base Apparel logo icon" />
       </div>
       <div class="main-content-wrapper order-last mobile:w-3/5 mobile:pt-36">
         <h1
-          class="title text-center pt-6 px-10 uppercase tracking-custom font-semibold text-4xl text-dkGrayRed mobile:text-left mobile:pl-20"
+          class="title text-center pt-6 px-10 uppercase tracking-custom font-semibold text-4xl text-dkGrayRed mobile:text-left mobile:m-auto mobile:text-2xl"
         >
           <span class="text-desatRed font-light block">We're</span
           ><span class="block">coming</span>
           <span class="block">soon</span>
         </h1>
-        <p class="text-desatRed py-8 px-4 text-center mobile:px-20 mobile:text-left">
+        <p
+          class="text-desatRed py-8 px-4 text-center mobile:m-auto mobile:px-10 mobile:text-left"
+        >
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
         <form
-          class="mb-10 mx-4 relative"
+          class="mb-10 mx-4 relative mobile:m-auto mobile:max-w-[90%]"
           action=""
           method="POST"
           name="email_form"
+          id="email_form"
         >
           <input
             class="h-12 m-auto block w-full border-2 border-desatRed rounded-full placeholder:pl-4 placeholder:text-desatRed placeholder:opacity-40"
@@ -59,9 +65,10 @@
             name="contact_email"
             id="contact_email"
             placeholder="  Email Address"
+            required
           />
           <div
-            class="error-icon-wrapper inline-block py-3 pr-3 h-full absolute top-0 right-24 invisible"
+            class="error-icon-wrapper inline-block py-3 pr-3 h-full absolute top-0 right-24 invisible mobile:right-36"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
               <g fill="none" fill-rule="evenodd">
@@ -74,8 +81,10 @@
               </g>
             </svg>
           </div>
-          <div
-            class="arrow-icon-wrapper rounded-full w-24 py-3 inline-block h-full absolute top-0 right-0 shadow-2xl bg-gradient-to-r from-offHoverLeft to-offHoverRight hover:from-onHoverLeft hover:to-onHoverRight"
+          <button
+            id="submit-button"
+            type="button"
+            class="arrow-icon-btn rounded-full w-24 py-3 inline-block h-full absolute top-0 right-0 shadow-2xl bg-gradient-to-r from-offHoverLeft to-offHoverRight hover:from-onHoverLeft hover:to-onHoverRight hover:cursor-pointer mobile:px-10 mobile:right-10"
           >
             <svg
               class="m-auto"
@@ -90,7 +99,7 @@
                 d="M1 1l8.836 8.836L1 18.671"
               />
             </svg>
-          </div>
+          </button>
         </form>
       </div>
       <picture class="banner-photo mobile:w-2/5 mobile:order-last">
@@ -102,5 +111,6 @@
         />
       </picture>
     </main>
+    <script src="./formhandler.js"></script>
   </body>
 </html>
