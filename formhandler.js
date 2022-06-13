@@ -1,35 +1,34 @@
-const userInput = document.getElementById("contact_email");
 const emailSubmitBtn = document.getElementById("submit-button");
 const errorMsgTag = document.getElementById("error-msg");
 const errorIcon = document.getElementById("error-icon-wrapper");
-let userVal = "";
+const RegEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
-emailSubmitBtn.addEventListener("click", () => {
-  userVal = userInput.value;
-  testVal();
+emailSubmitBtn.addEventListener("click", (event) => {
+  errorMsgTag.classList.remove("text-success");
+  errors = [];
+  event.preventDefault();
+  const userInput = document.getElementById("contact_email").value;
+
+  if (userInput == null || userInput == undefined) {
+    errors.push("Please provide a valid email");
+    errorIcon.style.visibility = "visible";
+    errorMsgTag.innerHTML = errors[0];
+    errorMsgTag.style.color = "red";
+  } else if (!userInput.match(RegEmail)) {
+    errors.push("Please provide a valid email");
+    errorIcon.style.visibility = "visible";
+    errorMsgTag.innerHTML = errors[0];
+    errorMsgTag.style.color = "red";
+  }
+
+  if (!errors.length > 0) {
+    errorIcon.style.display = "none";
+    errorMsgTag.classList.add("text-success");
+    errorMsgTag.innerText = "Thank you for subscribing to our newsletter.";
+    removeUserInput();
+  }
 });
 
-function testVal() {
-  if (userVal === "") {
-    errorMsgTag.textContent = "please provide a valid email";
-    alertIcon();
-  } else {
-    console.log(userVal);
-  }
-}
-
-let flag = true;
-function alertIcon() {
-  flag = false;
-  if (!flag) {
-    console.log(flag);
-    errorIcon.style.visibility = "visible";
-  }
-  setTimeout(() => {
-    flag = true;
-    if (flag) {
-      errorIcon.style.visibility = "invisible";
-    }
-    console.log("time out function ran");
-  }, 3000);
+function removeUserInput() {
+  document.getElementById("contact_email").value = "";
 }

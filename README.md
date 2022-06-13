@@ -69,6 +69,7 @@ Highlighted above:
    Build command to first build the styling, the second to rebuild the styling as changes are made live.
 
 - Stack Overflow for everything else (layout, dealing with SVGs etc.)
+- Had a look at Shabari02's code which was a nice way of implementing the email field feature. The script was straightforward to follow: https://github.com/Shabari02/Base-Apparel-coming-soon-page-Frontend-Mentor
 
 ## Author
 
@@ -76,5 +77,6 @@ wkan17012021
 
 ## Acknowledgments
 
-Thanks goes out to Brad Traversy for his video on TW css.
-Also, requested suggestions from FEM Slack Channel, Grace replied with some helpful comments- namely 375px listed in the style guide means make the mobile-firest-responsive design styling from this breakpoint to the next (1440px).
+- Thanks goes out to Brad Traversy for his video on TW css.
+- Also, requested suggestions from FEM Slack Channel, Grace replied with some helpful comments- namely 375px listed in the style guide means make the mobile-firest-responsive design styling from this breakpoint to the next (1440px).
+- Shabari02 code for the email functionality.
